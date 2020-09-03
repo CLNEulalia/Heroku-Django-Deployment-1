@@ -19,10 +19,11 @@ pipenv install whitenoise dj-database-url gunicorn django-cors-headers
 4. Open the project in the editor with `code .`. Add this one line to your `Procfile`. Make sure to replace the example_django with the name of your **project root**.
 
 ```
+# Replace example_django with your project root name:
 web: gunicorn example_django.wsgi
 ```
 
-5. Add the following to you `.gitignore` file:
+5. Add the following to your `.gitignore` file:
 
 ```
 .env

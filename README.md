@@ -132,10 +132,10 @@ MODE=dev
 # Example: DATABASE_URL=postgres://petsuser:pets@localhost:5432/pets
 ```
 
-8. Back in the Terminal, make sure **ALL** of your virtual environments are completely exited using the keyboard shortcut: <kbd>^</kbd> + <kbd>D</kbd> (control + D) or by typing `exit`.  This is important because the environment variables you created are only loaded when you initially launch the environment.  Once you've completely exited the shell, restart it with `pipenv shell` and test that your app is working locally (`python3 manage.py runserver`).  If it is proceed to the next steps:
+8. Back in the Terminal, make sure **ALL** of your virtual environments are completely exited using the keyboard shortcut: <kbd>^</kbd> + <kbd>D</kbd> (control + D) or by typing `exit`.  This is important because the environment variables you created are only loaded when you initially launch the environment.  Once you've completely exited the shell, restart it with `pipenv shell` and test that your app is working locally (`python3 manage.py runserver`).  If it is, proceed to the next steps:
 
 
-9. Run the Heroku commands to create your app.  Make sure your in the directory where the `manage.py` file is in your project when you run these commands:
+9. Run the Heroku commands to create your app.  Make sure you're in the directory where the `manage.py` file is in your project when you run these commands:
 
 > Login:
 
@@ -176,7 +176,7 @@ git commit -m "Your message"
 git push heroku master
 ```
 
-12.If your build is successful:
+12. If your build is successful:
 
 > Run your migrations on Heroku.
 

@@ -103,6 +103,27 @@ MIDDLEWARE = [
 ]
 ```
 
+> Configure the corsheaders package by adding **one** of the following.  For more details about what these options do, take a look at the [Configuration](https://github.com/adamchainz/django-cors-headers#configuration) section in the doc. **Make sure you [clear your browser cache](https://support.piktochart.com/article/243-clear-browser-cache) after setting up CORS in your back end to test if it is working.**:
+
+```python
+# To prevent access to your API from other applications add the
+# CORS_ALLOW_ORIGINS list and include only your front end app's
+# URLs.  This list prevents a front end from connecting to your 
+# back end unless it comes from a listed origin:
+CORS_ALLOWED_ORIGINS = [
+    "https://example.com",
+    "http://localhost:3000",
+    "http://127.0.0.1:3000"
+]
+```
+OR
+
+```python
+CORS_ALLOW_ALL_ORIGINS = True
+```
+
+
+
 > The dj-database-url package parses a database URL to configure the connection string values (i.e., the database name, port, and root user and password) automatically. This allows us to configure our database connection string using the same format that Heroku uses when we create a Postgres database for our deployed app. Heroku automatically adds the DATABASE_URL to our config vars, which it reads as environment variables. The benefit for us is that we will be able to easily push to Heroku without having to make changes to our settings.py file. **Make sure to replace the entire `DATABASES` constant in your file:
 
 ```python

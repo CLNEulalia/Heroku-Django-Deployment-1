@@ -108,8 +108,9 @@ MIDDLEWARE = [
 ```python
 # To prevent access to your API from other applications add the
 # CORS_ALLOW_ORIGINS list and include only your front end app's
-# URLs.  This list prevents a front end from connecting to your 
-# back end unless it comes from a listed origin:
+# URLs (localhost and deployed).  This list prevents a front end 
+# from connecting to your back end unless it comes from a listed origin:
+
 CORS_ALLOWED_ORIGINS = [
     "https://example.com",
     "http://localhost:3000",
